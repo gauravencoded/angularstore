@@ -1,0 +1,27 @@
+<?php
+include '../database.php';
+ $postdata = file_get_contents("php://input");
+ $request = json_decode($postdata);
+	
+      
+$res = $mysqli->query("SELECT count(*) FROM wishlist where email='$request->email'");
+	for ($row_no = $res->num_rows - 1; $row_no >= 0; $row_no--) 
+			{
+				$res->data_seek($row_no);
+				$row = $res->fetch_assoc();
+				$arr[$row_no]=$row;
+			}
+
+
+var_dump($arr);
+$res = $mysqli->query("SELECT sum(quantity) FROM cart where email='$request->email'");
+for ($row_no = $res->num_rows - 1; $row_no >= 0; $row_no--) 
+			{
+				$res->data_seek($row_no);
+				$row = $res->fetch_assoc();
+				$arr[$row_no]=$row;
+			}
+
+echo json_encode($arr);
+
+?>

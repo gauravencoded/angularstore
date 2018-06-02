@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CollegeCult- T-Shirts, Shoes, Skirts, Heels, Posters, Gifts and so much more you love. </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="keywords" content="wood, furniture, garden, gardentable, etc.">
+<meta name="description" content="Official dealer of wooden garden furniture.">
+<script>
+    document.onreadystatechange = function ()
+    {
+        var state = document.readyState
+        if (state == 'complete')
+        {
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+        }
+    }
+</script>
+<style>
+    #load{
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:100000;
+        background-color:white;
+        }
+</style>
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+</head>
+<body style="font-family:cordia new;" ng-app="angularApp" ng-controller="fullStore" >
+
+
+    <div id="load">
+        <div style="top:-1.25%;" class="progress">
+            <div  class="indeterminate"></div>
+        </div>
+        <center><span style="font-family:cordia new; font-size:50px">Awsome things are at bay!</span></center>
+    </div>
+    <div class="navbar-fixed">
+        <nav style="background-color:#232f3e" style=""><!-- side navbar starts here-->
+            <ul id="slide-out" class="side-nav">
+               <li style="width:100% text-align:center;background-color:#232f3e">
+
+                           <strong style="color:white"><a class="flow-text" style="text-decoration:none;color:white;" href="fullStore.html">Shop by Category</a> </strong>
+
+
+               </li>
+               <li class="no-padding">
+                   <ul class="collapsible collapsible-accordion">
+                   <li>
+                       <a class="collapsible-header"><img src="img/ICONS/menu/businesswomanred_24px.png"> <span style="  font-size:25px;">Women</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                       <div class="collapsible-body">
+                           <ul>
+
+                               <li><a ng-href="gstore.html?gender=F&type=tops"><img src="img/ICONS/menu/clothes_25px.png"> <span style="font-size:25px;"> Tops</span></a></li>
+                               <li><a ng-href="gstore.html?gender=F&type=shoes"><img src="img/ICONS/menu/womens_shoe_25px.png"> <span style="font-size:25px;"> Shoes</span></a></li>
+                              <li><a ng-href="gstore.html?gender=F&type=lingerie"><img src="img/ICONS/menu/bra_25px.png">  <span style="font-size:25px;"> Clutches</span></a></li>
+                               <li><a ng-href="gstore.html?gender=F&type=Jwellery"><img src="img/ICONS/menu/jewelry_25px.png"> <span style="font-size:25px;">Neck Pieces</span></a></li>
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
+           <li class="no-padding">
+               <ul class="collapsible collapsible-accordion">
+                   <li>
+                       <a class="collapsible-header"><span style="   font-size:25px;"> Men</span><i class="mdi-action-explore"></i></a>
+                       <div class="collapsible-body">
+                           <ul>
+                               <li><a ng-href="store.html?storeType=M&typeValue=T-Shirts"><img src="img/ICONS/menu/clothes_green_25px.png"> <span style="   font-size:25px;"> T-Shirts</span></a></li>
+                               <li><a ng-href="store.html?storeType=M&typeValue=Shoes"><img src="img/ICONS/menu/trainers_25px.png"> <span style="   font-size:25px;"> Hoodies</span></a></li>
+
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
+                 <li class="no-padding">
+               <ul class="collapsible collapsible-accordion">
+                   <li>
+                       <a class="collapsible-header"> <span style="   font-size:25px;"> Art Store</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                       <div class="collapsible-body">
+                           <ul>
+                               <li><a ng-href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="   font-size:25px;">Posters</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Mugs" ><img src="img/ICONS/beer_25px.png"> <span style="   font-size:25px;"> Paintings</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Mugs" ><img src="img/ICONS/beer_25px.png"> <span style="   font-size:25px;"> Mugs</span></a></li>
+
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
+           <li class="no-padding">
+               <ul class="collapsible collapsible-accordion">
+                   <li>
+                       <a class="collapsible-header" href="#"><span style="   font-size:25px;"> Mobile Covers</span><i class="mdi-social-person"></i></a>
+                       <div class="collapsible-body">
+                           <ul>
+                               <li><a ng-href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="   font-size:25px;"> Apple</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="   font-size:25px;"> MI</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="   font-size:25px;"> One Plus</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="   font-size:25px;"> Samsung</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Mugs" ><img src="img/ICONS/beer_25px.png"> <span style="   font-size:25px;"> Mugs</span></a></li>
+
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
+           <li class="no-padding">
+               <ul class="collapsible collapsible-accordion">
+                   <li>
+                       <a class="collapsible-header"><span style="   font-size:25px;">Discounts</span><i class="mdi-maps-local-offer"></i></a>
+                       <div class="collapsible-body">
+                           <ul>
+                               <li><a ng-href="store.html?storeType=Discounts&typeValue=10"><span style="   font-size:25px;"> 10% OFF</span></a></li>
+                               <li><a ng-href="store.html?storeType=Discounts&typeValue=10"><span style="   font-size:25px;">  30% OFF</span></a></li>
+                               <li><a ng-href="store.html?storeType=Discounts&typeValue=50"><span style="   font-size:25px;">  50% OFF</span></a></li>
+                               <li><a ng-href="store.html?storeType=Discounts&typeValue=70"><span style="   font-size:25px;">  70% OFF</span></a></li>
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
+       </ul>
+       <ul class="right">
+           <li><a href="#" ng-click="search()"><i class="mdi-action-search"></i></a></li>
+
+           <li>
+               <a ng-href="cart.html" >
+                 <i class="mdi-maps-local-mall" style="display:inline"></i>
+                 <span style="padding:0px" ng-bind="localStoreItemCount"></span> Item(s)
+             </a>
+           </li>
+           <li  class="right" ng-hide="loggedIn">
+               <a  class="dropdown-button" data-activates="dropdown2" ng-href="#!" ><i class="mdi-navigation-more-vert"></i></a>
+               <ul id='dropdown2' class='dropdown-content' >
+                   <li   >
+                       <a ng-href="#" ng-click="loginModal()">Login</a>
+                   </li>
+                   <li  >
+                       <a ng-href="#"  ng-click="newUserModal()" >Sign Up</a>
+                   </li>
+
+               </ul>
+           </li>
+           <li class="hide-on-med-and-down"><a href="fullStore.html" style="color:white" class="brand-logo center">CollegeCults</a></li>
+
+
+           <li ng-show="loggedIn" >
+               <a class="dropdown-button" data-activates="dropdown1" ng-href="#!" ><i class="mdi-navigation-more-vert"></i></a>
+               <ul id='dropdown1' style="position:absolute;top:64px"class='dropdown-content'>
+
+                   <li><a ng-href="cart.html">Cart(<span ng-bind="localStoreItemCount"></span>) </a></li>
+                   <li><a ng-href="wishlist.html">Wishlist(<span ng-bind="wishlistCount"></span>) </a></li>
+                   <li><a ng-href="myorders.html">Orders</a></li>
+                   <li><a ng-href="logout.html">Logout</a></li>
+               </ul>
+           </li>
+
+        </ul>
+<a class="hide-on-med-and-up" ng-href="index.html" style="color:yellow;font-size:30px" class="brand-logo left"><b>Cults</b></a>        <a ng-href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i> </a>
+</nav>
+</div>
+<!-- navbar ends here-->
+
+
+
+
+
+    <center><h4 style="font-family: cordia new; font-size: 40px;">Complete Store</h4></center>
+
+      <div class="row" >
+        <!--<div class="col s12 l2 m3" ng-repeat="store in stores.types">-->
+        <div class="col s6 l2 m3" ng-repeat="store in stores.types">
+        <h5 style="color:orange"><span style="flow-text" ng-bind="store"></span></h5>
+
+        <span style="font-size:140%" ng-repeat="name in stores.names[store]"><a ng-href="store.html?storeType={{name.key1}}&typeValue={{name.key2}}">
+            <span  ng-bind="name.storeName"></span> <span ng-if="store=='Discounts'">%</span></a><br></span><br>
+
+        </div>
+
+    </div>
+
+
+
+
+      <div id="loginModal" class="modal" style="background-color:white;">
+        <div class="modal-content">
+        <center>    <span ng-show="loginErrorView" STYLE="color:white;" class="chip red card hoverable"> <b >&#10006; </b>
+                <b><span  ng-bind="loginerr"></span></b></span></center>
+            <table><tr>
+            <td style="border-right:1px solid #ccc"><div class="col s6 l6"> <form>
+
+                    <div  class="input-field " style="">
+                        <input id="loginEmail" type="email" class="validate" ng-blur="asyncEmailCheck('login')" value="" ng-model="loginEmail" autofocus="autofocus" required/>      <label for="loginEmail"  data-error="Oops!" data-success="Perfect">Email</label>
+                    </div>
+                    <div class="input-field " style="">
+                        <input id="loginPassword" type="password" class="validate" value="" ng-model="loginPassword" required/>
+                        <label for="password"  data-error="Oops!" data-success="Perfect">Password</label>
+                    </div>
+
+
+                    <div class="input-field " style="">
+                        <input type="submit" name="submit" ng-click="login()" class="waves-effect waves-light btn" style="background-color:orange;color:white;" value="SIGN IN"/>
+                      <p>
+                    </div>
+                </form>
+
+            </div>
+
+                <div class="col s6 l6"><a href="#" ng-click="forgotPassword()">Forgot Password? </a> |
+                <a href="#" ng-click="newUserModal()">New User? </a>
+                </div></td>
+           <td><center>
+               <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="true" data-auto-logout-link="false"></div></center></td> </tr>
+            </table>
+         </div></div>
+
+
+
+<div id="registerModal" class="modal" style="background-color:white;">
+        <div class="modal-content">
+         <div class="col m8 s11 l4 offset-l4 offset-m2" >
+
+
+
+            <div class="  row">
+                  <div  ng-show="registerErrorView" >
+
+                      <center>  <span STYLE="color:white;margin-left:10px;" class="chip red card hoverable"> <b >&#10006; </b>
+                            <span ng-bind="registererr"></span>
+                        </span></center>
+                    </div>
+
+
+                <div class=" col s12 m12 l12 " style="">
+                    <center><h5><b>Please let us know your..</b></h5></center>
+                    <form>
+
+                            <div  class="input-field col s11 m12 l12" style="">
+                                <input id="name" type="text" class="validate" value="" ng-model="registerName"  required/>
+                                <label for="name" data-error="Oops!" data-success="Perfect">Name</label>
+                            </div>
+
+                            <div  class="input-field col s11 m12 l12" style="">
+                                <input id="email" type="email" class="validate" ng-blur="asyncEmailCheck('register')"  value="" ng-model="registerEmail"  required/>
+                                <label for="email" data-error="Oops!" data-success="Perfect">Email</label>
+                            </div>
+
+                            <div class="input-field col s11 m12 l12" style="margin=auto;">
+                                <input id="number" type="number" class="validate" value="" ng-blur="asyncMobileCheck()" ng-model="registerMobile" maxlength="10" minlength="10"  required/>
+                                <label for="number" data-error="Oops!" data-success="Perfect">Mobile Number</label>
+                            </div>
+
+
+
+                            <div class="input-field col s11 m12 l12" style="margin=auto;">
+                                <input id="password" type="password" class="validate" value="" ng-model="registerPassword" required>
+                                <label for="password" data-error="Oops!" data-success="Perfect">Password</label>
+                            </div>
+
+                            <div class="input-field col s12 m12 l12" style="margin:auto;">
+                                <input type="submit" name="submit" ng-click="register()" class="waves-effect waves-light btn orange col s12 m5 l3" style=""value="Continue">
+                                 &nbsp;&nbsp;&nbsp;&nbsp;<b>An email will be sent to you with activation link and OTP.</b>
+                            </div>
+
+                    </form>
+                     <div class="input-field col s12 m6 l12  " style="text-decoration:none"></div>
+                </div>
+             </div>
+        </div>
+        </div>
+    </div>
+
+
+
+          <div id="forgotModal" class="modal" style="background-color:white;">
+      <div class="modal-content">
+      <div class="col s6 l6">
+            <div class="row"><div  ng-show="forgotErrorView" >
+
+                      <center>  <span STYLE="color:white;margin-left:10px;" class="chip red card hoverable"> <b >&#10006; </b>
+                            <span ng-bind="forgoterr"></span>
+                        </span></center>
+                    </div>
+                </div>
+          <form>
+            <div  class="input-field " style="">
+                <input id="forgotEmail" type="email" class="validate" ng-blur="asyncEmailCheck('forgot')" value="" ng-model="forgotEmail" autofocus="autofocus" required/>      <label for="forgotEmail"  data-error="Oops!" data-success="Perfect">Email</label>
+            </div>
+            <div class="input-field " ng-if="user.status=='Fail'"><b><span style="color:red" ng-bind="user.cause"></span></b></div>
+            <div class="input-field " style="">
+                <input type="submit" name="submit" ng-click="recoverPassword()" class="waves-effect waves-light btn" style="background-color:orange;color:white;" value="SIGN IN"/> &nbsp;&nbsp;&nbsp;&nbsp;<b> We will send you an email with recovery link and OTP.</b>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+       <div id="regconfirmModal" class="modal" style="background-color:white;">
+        <div class="modal-content">
+
+           <div class="row">
+                <div class="col s12 l12">
+
+                     registeration confirmed
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a ng-href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+
+<div ng-include src="'partials/footer.html'"></div>
+
+
+
+<!--my angular scripts-->
+<script type="text/javascript" src="jquery/jquery.js"></script>
+
+
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+
+<!--my css-->
+<link ng-href="css/index.css" rel="stylesheet">
+
+<!--angular libraries-->
+<script type="text/javascript" src="angular/lib/angular.min.js"></script>
+<script type="text/javascript" src="angular/lib/angular-resource.min.js"></script>
+<script type="text/javascript" src="angular/lib/angular-webstorage.min.js"></script>
+
+<!--my javascripts-->
+<script type="text/javascript" src="javascript/javascript.js"></script>
+<script type="text/javascript" src="angular/controllers/fullStore/fullStoreController.js"></script>
+
+</body>
+</html>

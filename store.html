@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head><title>CollegeCult- T-Shirts, Shoes, Skirts, Heels, Posters, Gifts and so much more you love. </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="keywords" content="wood, furniture, garden, gardentable, etc.">
+<meta name="description" content="Official dealer of wooden garden furniture.">
+<script>
+    document.onreadystatechange = function ()
+    {
+        var state = document.readyState
+        if (state == 'complete')
+        {
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+        }
+    }
+</script>
+
+<style>
+    #load{
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:100000;
+        background-color:white;
+        }
+</style>
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    </head>
+<body ng-app="angularApp" ng-controller="storeMaker" style="font-family:cordia new">
+    <a name="top"></a>
+        <div id="load">
+        <div style="top:-1.25%;" class="progress">
+        <div  class="indeterminate"></div>
+        </div>
+        <center><span style="font-family:cordia new; font-size:50px">Awsome things are at bay!</span></center>
+    </div>
+
+
+    <div class="navbar-fixed">
+        <nav style="background-color:#232f3e" style=""><!-- side navbar starts here-->
+            <ul id="slide-out" class="side-nav">
+               <li style="width:100% text-align:center;background-color:#232f3e">
+
+                           <strong style="color:white"><a class="flow-text" style="text-decoration:none;color:white;" href="fullStore.html">Shop by Category</a> </strong>
+
+
+               </li>
+               <li class="no-padding">
+                   <ul class="collapsible collapsible-accordion">
+                   <li>
+                       <a class="collapsible-header"><img src="img/ICONS/menu/businesswomanred_24px.png"> <span style="  font-size:25px;">Women</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                       <div class="collapsible-body">
+                           <ul>
+
+                               <li><a ng-href="gstore.html?gender=F&type=tops"><img src="img/ICONS/menu/clothes_25px.png"> <span style="font-size:25px;"> Tops</span></a></li>
+                               <li><a ng-href="gstore.html?gender=F&type=shoes"><img src="img/ICONS/menu/womens_shoe_25px.png"> <span style="font-size:25px;"> Shoes</span></a></li>
+                              <li><a ng-href="gstore.html?gender=F&type=lingerie"><img src="img/ICONS/menu/bra_25px.png">  <span style="font-size:25px;"> Clutches</span></a></li>
+                               <li><a ng-href="gstore.html?gender=F&type=Jwellery"><img src="img/ICONS/menu/jewelry_25px.png"> <span style="font-size:25px;">Neck Pieces</span></a></li>
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
+           <li class="no-padding">
+               <ul class="collapsible collapsible-accordion">
+                   <li>
+                       <a class="collapsible-header"><span style="   font-size:25px;"> Men</span><i class="mdi-action-explore"></i></a>
+                       <div class="collapsible-body">
+                           <ul>
+                               <li><a ng-href="store.html?storeType=M&typeValue=T-Shirts"><img src="img/ICONS/menu/clothes_green_25px.png"> <span style="   font-size:25px;"> T-Shirts</span></a></li>
+                               <li><a ng-href="store.html?storeType=M&typeValue=Shoes"><img src="img/ICONS/menu/trainers_25px.png"> <span style="   font-size:25px;"> Hoodies</span></a></li>
+
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
+                 <li class="no-padding">
+               <ul class="collapsible collapsible-accordion">
+                   <li>
+                       <a class="collapsible-header"> <span style="   font-size:25px;"> Art Store</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                       <div class="collapsible-body">
+                           <ul>
+                               <li><a ng-href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="   font-size:25px;">Posters</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Mugs" ><img src="img/ICONS/beer_25px.png"> <span style="   font-size:25px;"> Paintings</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Mugs" ><img src="img/ICONS/beer_25px.png"> <span style="   font-size:25px;"> Mugs</span></a></li>
+
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
+           <li class="no-padding">
+               <ul class="collapsible collapsible-accordion">
+                   <li>
+                       <a class="collapsible-header" href="#"><span style="   font-size:25px;"> Mobile Covers</span><i class="mdi-social-person"></i></a>
+                       <div class="collapsible-body">
+                           <ul>
+                               <li><a ng-href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="   font-size:25px;"> Apple</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="   font-size:25px;"> MI</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="   font-size:25px;"> One Plus</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="   font-size:25px;"> Samsung</span></a></li>
+                               <li><a ng-href="gstore.html?gender=U&type=Mugs" ><img src="img/ICONS/beer_25px.png"> <span style="   font-size:25px;"> Mugs</span></a></li>
+
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
+           <li class="no-padding">
+               <ul class="collapsible collapsible-accordion">
+                   <li>
+                       <a class="collapsible-header"><span style="   font-size:25px;">Discounts</span><i class="mdi-maps-local-offer"></i></a>
+                       <div class="collapsible-body">
+                           <ul>
+                               <li><a ng-href="store.html?storeType=Discounts&typeValue=10"><span style="   font-size:25px;"> 10% OFF</span></a></li>
+                               <li><a ng-href="store.html?storeType=Discounts&typeValue=10"><span style="   font-size:25px;">  30% OFF</span></a></li>
+                               <li><a ng-href="store.html?storeType=Discounts&typeValue=50"><span style="   font-size:25px;">  50% OFF</span></a></li>
+                               <li><a ng-href="store.html?storeType=Discounts&typeValue=70"><span style="   font-size:25px;">  70% OFF</span></a></li>
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
+       </ul>
+       <ul class="right">
+           <li><a href="#" ng-click="search()"><i class="mdi-action-search"></i></a></li>
+
+           <li>
+               <a ng-href="cart.html" >
+                 <i class="mdi-maps-local-mall" style="display:inline"></i>
+                 <span style="padding:0px" ng-bind="localStoreItemCount"></span> Item(s)
+             </a>
+           </li>
+           <li  class="right" ng-hide="loggedIn">
+               <a  class="dropdown-button" data-activates="dropdown2" ng-href="#!" ><i class="mdi-navigation-more-vert"></i></a>
+               <ul id='dropdown2' class='dropdown-content' >
+                   <li   >
+                       <a ng-href="#" ng-click="loginModal()">Login</a>
+                   </li>
+                   <li  >
+                       <a ng-href="#"  ng-click="newUserModal()" >Sign Up</a>
+                   </li>
+
+               </ul>
+           </li>
+           <li class="hide-on-med-and-down"><a href="fullStore.html" style="color:white" class="brand-logo center">CollegeCults</a></li>
+
+
+           <li ng-show="loggedIn" >
+               <a class="dropdown-button" data-activates="dropdown1" ng-href="#!" ><i class="mdi-navigation-more-vert"></i></a>
+               <ul id='dropdown1' style="position:absolute;top:64px"class='dropdown-content'>
+
+                   <li><a ng-href="cart.html">Cart(<span ng-bind="localStoreItemCount"></span>) </a></li>
+                   <li><a ng-href="wishlist.html">Wishlist(<span ng-bind="wishlistCount"></span>) </a></li>
+                   <li><a ng-href="myorders.html">Orders</a></li>
+                   <li><a ng-href="logout.html">Logout</a></li>
+               </ul>
+           </li>
+
+        </ul>
+<a class="hide-on-med-and-up" ng-href="index.html" style="color:yellow;font-size:30px" class="brand-logo left"><b>Cults</b></a>        <a ng-href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i> </a>
+</nav>
+</div>
+
+
+
+
+
+
+
+
+<div class="fixed-action-btn hide-on-large-only" style="bottom: 45px; right: 24px;"><!--FAB-->
+    <a class="btn-floating btn-large red" href="index.html">
+      <i class="large material-icons" >home</i>
+    </a>
+</div>
+<div class="row" style="margin:0px">
+
+    <div class="col s12 m2 l2 hide-on-small-only" style="padding:0px;margin-left:30px; ">
+          <ul class="flow-text" style="width:100%" >
+            <li>
+             <div class="" style="font-family:cordia new">Order Store</div>
+                <ul style="margin:0px">
+                  <li>
+                      <input  type="radio" class="with-gap" name="orderBy" id="discount_order" value="discount" ng-click="orderItems('discount')"><label for="discount_order"> Discount</label>
+                  </li>
+                  <li>
+                      <input type="radio" class="with-gap" name="orderBy" id="Price_order" value="price" ng-click="orderItems('price')" ><label for="Price_order">High Price</label>
+                  </li>
+                  <li>
+                      <input type="radio" class="with-gap" name="orderBy" id="popularity_order" value="name" ng-click="orderItems('incart')" ><label for="popularity_order">Popularity</label>
+                  </li>
+                </ul>
+
+            </li>
+          </ul>
+
+
+
+<ul class="" style="width:100%">
+
+
+
+    <li ng-repeat="types in filtertypes">
+    <div class="" style="font-size:18px;text-transform:capitalize">{{types}}</div>
+    <ul>
+        <li ng-repeat="filter in filterArray" style="font-size:10px;">
+           <span  ng-if="filter.type==types">
+               <input  type="checkbox"  name="noise" id="{{filter.name}}"  ng-model="filter.on" ng-change="checkChange()">
+               <label for="{{filter.name}}"><span style="font-size:15px; color:grey" ng-bind="filter.name"></span></label></span>
+        </li>
+        </ul>
+    </li>
+
+
+
+        </ul>
+
+  </div>
+
+        <div class="hide-on-med-and-up  ">
+      <ul class="collapsible popout" data-collapsible="accordion">
+         <li >
+            <div class="collapsible-header">Sort and Filter</div>
+            <div class="collapsible-body">
+                <div class="row">
+                   <div style="margin-left:20px" class=""><span style="color:orange" > Order items:</span></div>
+
+                    <div class="col s4">
+                        <input class="with-gap" type="radio" name="orderBy" id="discount_order" value="discount" ng-click="orderItems('discount')"><label for="discount_order"> Discount</label>
+                    </div>
+                    <div class="col s4">
+                        <input class="with-gap" type="radio" name="orderBy" id="Price_order" value="price" ng-click="orderItems('price')" ><label for="Price_order">Low Price</label>
+                    </div>
+                    <div class="col s4">
+                        <input class="with-gap" type="radio" name="orderBy" id="popularity_order" value="name" ng-click="orderItems('incart')" ><label for="popularity_order">Popularity</label>
+                    </div>
+
+
+
+                </div>
+             <div class="row">
+                  <div style="margin-left:20px" class=""><span style="color:orange" >Filters</span></div>
+
+
+                </div>
+
+
+
+             </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+<div class="col l9 m9 s12" style="border-left:1px solid #ccc;margin-right:0px "><br>
+  <div class="row"  style="width:100%;margin-right:0px  " >
+
+      <div class="col l3 m4 s6 "ng-repeat="item in items | orderObjectBy:orderBy | filter:filterFunc">
+        <div class="row item" style="overflow:hidden"  >
+            <div class="">
+                <span ng-if="item.discount>0" STYLE="background-color:#73AD21;color:white;margin-left:10px;font-size:20px; font-family:cordia new "class="chip">- <span ng-bind="item.discount"></span>%</span>
+                <span ng-if="item.discount==0" STYLE="background-color:white;color:white;margin-left:10px;font-size:20px; font-family:cordia new "class="chip">- <span ng-bind="item.discount"></span>%</span>
+
+                <a ng-href="#" ng-show="loggedIn"ng-click="addToWishlist(item.productId)" style="float:right"><img src="img/ICONS/like_32px.png" ></a>
+                  <a ng-href="productdetail.html?productId={{item.productId}}&productCategory={{item.productCategory}}"  ><center><img  class="responsive-img" ng-src="img/products/{{item.productId}}/{{item.productId+'.jpg'}}" style="" alt="product name"></center></a>
+            </div>
+
+
+                <infoContainer class="" style="font-size:18px">
+         <center style="padding:0px"> <h6 style="text-align:center;"><a ng-href=""><span ng-bind="item.name"></span></a>      </h6>
+            <span   ng-if="item.discount>0" style="text-align:center;" id="price"class="price-used" style="font-size:19px;">
+                <span  style="font-size:19px;text-decoration:line-through" ng-bind="item.price | currency:'&#8377;'"></span>
+             </span>
+            <span  ng-if="item.discount==0"style="text-align:center;" class="price-used" style="font-size:19px;">
+            <span  ng-bind="item.price | currency:'&#8377;'"></span>
+             </span>
+             &nbsp;
+            <span style="text-align:center;" ng-if="item.discount>0" class="price-used" style="color: green;font-size:12px;text-decoration:none !important" ng-bind="item.price-item.discount*item.price/100 | currency:'&#8377;'"> </span>
+            <br>
+             <a ng-href="#" class=" showme"  ng-click="addtoCart(item.productId,item.price,item.discount)" class="">
+                 <span >Add to Cart</span> </a>
+             <!--a ng-href="orderSummary.html?orderType=single&productId={{item.productId}}"  > Checkout</a-->
+        </center>
+             </infoContainer>
+</div>
+
+      </div>
+
+
+    </div>
+
+
+</div>
+</div>
+
+
+      <div id="modal1" class="modal" style="background-color:white;">
+        <div class="modal-content">
+
+           <div class="row">
+                <div class="col s12 l12 flow-text">
+
+                   <center> Please select yout preferred size</center>
+
+                           <center><span ng-repeat="size in sizes">
+                      <a style="font-size:34px" class="modal-close" ng-href="" id="S" ><span class="size " ng-click="setSize(size.size,insert='Y',productId,discount,price)">{{size.size}}</span></a>
+                            &nbsp;&nbsp;&nbsp;</span>
+
+              </center>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+        <div class="modal-footer">
+            <a ng-href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+
+
+      <div id="loginModal" class="modal" style="background-color:white;">
+        <div class="modal-content">
+        <center>    <span ng-show="loginErrorView" STYLE="color:white;" class="chip red card hoverable"> <b >&#10006; </b>
+                <b><span  ng-bind="loginerr"></span></b></span></center>
+            <table><tr>
+            <td style="border-right:1px solid #ccc"><div class="col s6 l6"> <form>
+
+                    <div  class="input-field " style="">
+                        <input id="loginEmail" type="email" class="validate" ng-blur="asyncEmailCheck('login')" value="" ng-model="loginEmail" autofocus="autofocus" required/>      <label for="loginEmail"  data-error="Oops!" data-success="Perfect">Email</label>
+                    </div>
+                    <div class="input-field " style="">
+                        <input id="loginPassword" type="password" class="validate" value="" ng-model="loginPassword" required/>
+                        <label for="password"  data-error="Oops!" data-success="Perfect">Password</label>
+                    </div>
+
+
+                    <div class="input-field " style="">
+                        <input type="submit" name="submit" ng-click="login()" class="waves-effect waves-light btn" style="background-color:orange;color:white;" value="SIGN IN"/>
+                      <p>
+                    </div>
+                </form>
+
+            </div>
+
+                <div class="col s6 l6"><a href="#" ng-click="forgotPassword()">Forgot Password? </a> |
+                <a href="#" ng-click="newUserModal()">New User? </a>
+                </div></td>
+           <td><center>
+               <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="true" data-auto-logout-link="false"></div></center></td> </tr>
+            </table>
+         </div></div>
+
+
+    <div id="registerModal" class="modal" style="background-color:white;">
+        <div class="modal-content">
+         <div class="col m8 s11 l4 offset-l4 offset-m2" >
+
+
+
+            <div class="  row">
+                  <div  ng-show="registerErrorView" >
+
+                      <center>  <span STYLE="color:white;margin-left:10px;" class="chip red card hoverable"> <b >&#10006; </b>
+                            <span ng-bind="registererr"></span>
+                        </span></center>
+                    </div>
+
+
+                <div class=" col s12 m12 l12 " style="">
+                    <center><h5><b>Please let us know your..</b></h5></center>
+                    <form>
+
+                            <div  class="input-field col s11 m12 l12" style="">
+                                <input id="name" type="text" class="validate" value="" ng-model="registerName"  required/>
+                                <label for="name" data-error="Oops!" data-success="Perfect">Name</label>
+                            </div>
+
+                            <div  class="input-field col s11 m12 l12" style="">
+                                <input id="email" type="email" class="validate" ng-blur="asyncEmailCheck('register')"  value="" ng-model="registerEmail"  required/>
+                                <label for="email" data-error="Oops!" data-success="Perfect">Email</label>
+                            </div>
+
+                            <div class="input-field col s11 m12 l12" style="margin=auto;">
+                                <input id="number" type="number" class="validate" value="" ng-blur="asyncMobileCheck()" ng-model="registerMobile" maxlength="10" minlength="10"  required/>
+                                <label for="number" data-error="Oops!" data-success="Perfect">Mobile Number</label>
+                            </div>
+
+
+
+                            <div class="input-field col s11 m12 l12" style="margin=auto;">
+                                <input id="password" type="password" class="validate" value="" ng-model="registerPassword" required>
+                                <label for="password" data-error="Oops!" data-success="Perfect">Password</label>
+                            </div>
+
+                            <div class="input-field col s12 m12 l12" style="margin:auto;">
+                                <input type="submit" name="submit" ng-click="register()" class="waves-effect waves-light btn orange col s12 m5 l3" style=""value="Continue">
+                                 &nbsp;&nbsp;&nbsp;&nbsp;<b>An email will be sent to you with activation link and OTP.</b>
+                            </div>
+
+                    </form>
+                     <div class="input-field col s12 m6 l12  " style="text-decoration:none"></div>
+                </div>
+             </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+      <div id="forgotModal" class="modal" style="background-color:white;">
+      <div class="modal-content">
+      <div class="col s6 l6">
+            <div class="row"><div  ng-show="forgotErrorView" >
+
+                      <center>  <span STYLE="color:white;margin-left:10px;" class="chip red card hoverable"> <b >&#10006; </b>
+                            <span ng-bind="forgoterr"></span>
+                        </span></center>
+                    </div>
+                </div>
+          <form>
+            <div  class="input-field " style="">
+                <input id="forgotEmail" type="email" class="validate" ng-blur="asyncEmailCheck('forgot')" value="" ng-model="forgotEmail" autofocus="autofocus" required/>      <label for="forgotEmail"  data-error="Oops!" data-success="Perfect">Email</label>
+            </div>
+            <div class="input-field " ng-if="user.status=='Fail'"><b><span style="color:red" ng-bind="user.cause"></span></b></div>
+            <div class="input-field " style="">
+                <input type="submit" name="submit" ng-click="recoverPassword()" class="waves-effect waves-light btn" style="background-color:orange;color:white;" value="SIGN IN"/> &nbsp;&nbsp;&nbsp;&nbsp;<b> We will send you an email with recovery link and OTP.</b>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+
+
+
+       <div id="regconfirmModal" class="modal" style="background-color:white;">
+        <div class="modal-content">
+
+           <div class="row">
+                <div class="col s12 l12">
+
+                     registeration confirmed
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a ng-href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function getQueryVariable(variable)
+  {
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++)
+       {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+    }</script>
+
+
+
+<div ng-include src="'partials/footer.html'"></div>
+<script src="jquery/jquery.js"></script>
+<!--my angular scripts-->
+
+<!--materialize css-->
+<link rel="stylesheet" href="materialize/css/materialize.min.css">
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+<!--my css-->
+<link ng-href="css/index.css" rel="stylesheet">
+<!--angular libraries-->
+<script type="text/javascript" src="angular/lib/angular.min.js"></script>
+<script type="text/javascript" src="angular/lib/angular-resource.min.js"></script>
+<script type="text/javascript" src="angular/lib/angular-webstorage.min.js"></script>
+<script type="text/javascript" src="angular/lib/ng-order-object-by.js"></script>
+<!--my javascripts-->
+<script type="text/javascript" src="javascript/javascript.js"></script>
+<script type="text/javascript" src="angular/controllers/stores/storeController.js"></script>
+<style>
+   /* .showme{visibility:hidden}*/
+
+
+
+    .ccc{font-size:20px;border:1px solid #ccc;padding:1%;border-radius:3px;color:#fff;text-decoration:none;background:#ccc}
+    .addtoc{background:tomato;text-decoration:none;border:1px solid tomato;padding:2px 30%;border-radius:3px;width:100%}
+    </style>
+
+
+        <script>
+   $(document).ready(function(){
+ $(".item").hover(function(){alert("dfdfdf");});
+   });
+
+
+
+    </script>
+
+
+</body>
+</html>
